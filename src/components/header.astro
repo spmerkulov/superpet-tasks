@@ -22,34 +22,47 @@ const currentPath = Astro.url.pathname;
     <nav
       class="relative z-30 flex flex-row-reverse justify-start w-full text-base sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row"
     >
-      <div
-        id="openMenu"
-        class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-8 h-8 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"><path d="M4 8h16M4 16h16"></path></svg
-        >
-      </div>
-      <div
-        id="closeMenu"
-        class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg
-        >
-      </div>
+      {
+        (currentPath === "/superpet-tasks/" || currentPath === "/") ? (
+          <a
+            href="/superpet-tasks/tasks"
+            class="sm:hidden inline-flex items-center justify-center w-auto px-4 py-2 ml-4 text-sm font-semibold rounded-full border border-neutral-300 bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+          >
+            Задания
+          </a>
+        ) : (
+          <>
+            <div
+              id="openMenu"
+              class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
+            >
+              <svg
+                class="w-8 h-8 dark:text-neutral-200"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"><path d="M4 8h16M4 16h16"></path></svg
+              >
+            </div>
+            <div
+              id="closeMenu"
+              class="flex flex-col items-end justify-center hidden w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
+            >
+              <svg
+                class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg
+              >
+            </div>
+          </>
+        )
+      }
       <div
         id="menu"
         class="fixed top-[75px] ease-out duration-300 sm:top-0 w-full left-0 sm:py-0 pt-7 pb-4 dm:mx-0 left-0 z-40 flex-col items-end justify-start hidden w-full h-auto text-base sm:text-lg sm:h-auto sm:relative sm:flex-row sm:flex sm:w-auto sm:pr-12 sm:pt-0"

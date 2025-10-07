@@ -28,6 +28,9 @@ if (typeof window !== 'undefined') {
 
     // Mobile menu
     mobileMenuFunctionality();
+
+    // Avatar modal
+    avatarModalFunctionality();
   });
 
   window.stickyHeaderFuncionality = () => {
@@ -88,6 +91,15 @@ if (typeof window !== 'undefined') {
     }
   }
 
+  function avatarModalFunctionality() {
+    const avatarThumb = document.getElementById("avatarThumb");
+    if (avatarThumb) {
+      avatarThumb.addEventListener("click", () => {
+        openAvatarModal();
+      });
+    }
+  }
+
   window.openMobileMenu = () => {
     const openMenu = document.getElementById("openMenu");
     const closeMenu = document.getElementById("closeMenu");
@@ -117,5 +129,19 @@ if (typeof window !== 'undefined') {
     if (openMenu) openMenu.classList.remove("hidden");
     if (menu) menu.classList.add("hidden");
     if (mobileMenuBackground) mobileMenuBackground.classList.add("hidden");
+  };
+
+  window.openAvatarModal = () => {
+    const avatarModalBackground = document.getElementById("avatarModalBackground");
+    if (avatarModalBackground) {
+      avatarModalBackground.classList.remove("hidden");
+    }
+  };
+
+  window.closeAvatarModal = () => {
+    const avatarModalBackground = document.getElementById("avatarModalBackground");
+    if (avatarModalBackground) {
+      avatarModalBackground.classList.add("hidden");
+    }
   };
 }
