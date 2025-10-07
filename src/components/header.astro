@@ -64,8 +64,8 @@ const currentPath = Astro.url.pathname;
         </div>
         {
           menus.map((menu) => {
-            // Скрываем кнопку Home на главной странице
-            if (menu.url === "/superpet-tasks/" && (currentPath === "/superpet-tasks/" || currentPath === "/")) {
+            // Скрываем кнопку "Главная" только на главной странице
+            if (menu.name === "Главная" && (currentPath === "/superpet-tasks/" || currentPath === "/")) {
               return null;
             }
             return (
