@@ -1,10 +1,10 @@
 [
 	{
 		"name": "Главная",
-		"url": "/"
+		"url": "/superpet-tasks/"
 	},
 	{
 		"name": "Задания",
-		"url": "/tasks"
+		"url": "/superpet-tasks/tasks"
 	}
 ]

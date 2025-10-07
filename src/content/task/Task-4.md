@@ -128,7 +128,7 @@ description: 3 варианта улучшения интерфейса для �
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 2rem 0;">
   <!-- Previous Task Button -->
-  <a href="/task/task-3" class="prev-task-button">
+  <a href="/superpet-tasks/task/task-3" class="prev-task-button">
     <div style="display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; border: 1px solid #f3f4f6; border-radius: 9999px; margin-right: 0.5rem;">
       <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -138,7 +138,7 @@ description: 3 варианта улучшения интерфейса для �
   </a>
 
   <!-- Next Task Button -->
-  <a href="/task/task-5" class="next-task-button">
+  <a href="/superpet-tasks/task/task-5" class="next-task-button">
     Задание №5
     <div style="display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; border: 1px solid #f3f4f6; border-radius: 9999px; margin-left: 0.5rem;">
       <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">

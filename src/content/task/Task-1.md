@@ -216,7 +216,7 @@ description: Реализация подписки на корм (auto-order) с
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
   <!-- Next Task Button -->
-  <a href="/task/task-2" class="next-task-button">
+  <a href="/superpet-tasks/task/task-2" class="next-task-button">
     Задание №2
     <div style="display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; border: 1px solid #f3f4f6; border-radius: 9999px; margin-left: 0.5rem;">
       <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
