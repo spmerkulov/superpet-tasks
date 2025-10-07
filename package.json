@@ -1,7 +1,9 @@
 {
-	"name": "astro-aria",
+	"name": "superpet-tasks",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"author": "Sergey Merkulov",
+	"description": "Тестовые задания для позиции технического менеджера SUPERPET",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
