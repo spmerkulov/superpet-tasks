@@ -2,7 +2,9 @@
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("task");
 // Use configured base path to generate correct links on GitHub Pages
-const base = import.meta.env.BASE_URL || "/";
+// Astro provides BASE_URL when `base` is configured. Ensure it has a trailing slash.
+const baseRaw = import.meta.env.BASE_URL || "/";
+const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`;
 
 const { count } = Astro.props;
 

@@ -44,7 +44,7 @@ description: 3 варианта улучшения интерфейса для �
 **Сложность внедрения:** низкая — можно сделать через CSS/JS в Elementor (или готовые плагины sticky add-to-cart).
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <img src="/post-tasks/variant-sticky.png" alt="Sticky панель внизу экрана — компактный Add-to-cart бар" style="max-width: 50%; height: auto; display: block;" />
+  <img src="/superpet-tasks/post-tasks/variant-sticky.png" alt="Sticky панель внизу экрана — компактный Add-to-cart бар" style="max-width: 50%; height: auto; display: block;" />
 </div>
 
 ---
@@ -71,7 +71,7 @@ description: 3 варианта улучшения интерфейса для �
 **Сложность внедрения:** низкая/средняя — требует UX для раскрытия и состояния (disabled, busy).
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <img src="/post-tasks/variant-fab.png" alt="Плавающая круглая CTA (Floating Action Button) с подсказкой" style="max-width: 50%; height: auto; display: block;" />
+  <img src="/superpet-tasks/post-tasks/variant-fab.png" alt="Плавающая круглая CTA (Floating Action Button) с подсказкой" style="max-width: 50%; height: auto; display: block;" />
 </div>
 
 ---
@@ -94,7 +94,7 @@ description: 3 варианта улучшения интерфейса для �
 **Сложность внедрения:** средняя — потребует дизайна и пересмотра блока карточки в Elementor.
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <img src="/post-tasks/variant-firstscreen.png" alt="Интерактивный «первый экран» + приоритетная зона вариаций" style="max-width: 50%; height: auto; display: block;" />
+  <img src="/superpet-tasks/post-tasks/variant-firstscreen.png" alt="Интерактивный «первый экран» + приоритетная зона вариаций" style="max-width: 50%; height: auto; display: block;" />
 </div>
 
 ---
