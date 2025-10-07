@@ -1,25 +1,13 @@
 ---
 import { getCollection } from "astro:content";
-const allPosts = await getCollection("post");
+const allPosts = await getCollection("task");
 
 const { count } = Astro.props;
 
-function parseDate(dateStr) {
-  const [month, day, year] = dateStr.split(" ");
-  return new Date(`${month} ${parseInt(day)}, ${year}`);
-}
-
-const sortedPosts = allPosts
-  .map((post) => ({
-    ...post,
-    date: parseDate(post.data.dateFormatted),
-  }))
-  .sort((a, b) => b.date.getTime() - a.date.getTime());
-
-const postsLoop = sortedPosts.slice(0, count).map((post) => {
+const postsLoop = allPosts.slice(0, count).map((post) => {
   return {
     ...(post.data || {}),
-    link: `/post/${post.slug}`,
+    link: `/task/${post.slug}`,
   };
 });
 ---
@@ -84,9 +72,7 @@ const postsLoop = sortedPosts.slice(0, count).map((post) => {
           <p class="text-sm text-neutral-600 dark:text-neutral-400">
             <span>{post.description}</span>
           </p>
-          <div class="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-            Posted on {post.dateFormatted}
-          </div>
+
         </div>
       </div>
     )
